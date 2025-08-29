@@ -356,7 +356,11 @@
           <div class="card bg-white p-4 rounded-xl shadow-md w-90">
             <div class="flex justify-between items-start items-center">
               <div class="bg-[#FFE3E2] rounded-lg p-3">
-                <img src="./assets/brac.png" alt="Emergency" class="w-12 h-12" />
+                <img
+                  src="./assets/brac.png"
+                  alt="Emergency"
+                  class="w-12 h-12"
+                />
               </div>
               <button class="likeBtn">
                 <i class="fa-regular fa-heart"></i>
@@ -422,5 +426,22 @@
           </div>
         </div>
       </section>
+
+      <!-- History Section -->
+      <section class="bg-white rounded-lg shadow p-4">
+        <div class="flex justify-between items-center mb-4">
+          <h3 class="font-semibold text-xl flex items-center gap-2">
+            <img src="./assets/clock.png" class="w-5 h-5" /> Call History
+          </h3>
+          <button
+            id="clearHistory"
+            class="px-6 py-3 rounded-full bg-green-600 text-white rounded hover:bg-gray-300 hover:text-black"
+          >
+            Clear
+          </button>
+        </div>
+        <ul id="historyList" class="space-y-2 text-sm text-gray-700"></ul>
+      </section>
+    </main>
   </body>
 </html>
