@@ -36,41 +36,58 @@
       <div class="flex items-center gap-2">
         <img
           src="./assets/logo.png"
-          alt="Logo"
+          alt="Emergency Service Logo"
           class="w-10 h-10 md:w-[50px] md:h-[50px]"
         />
         <h1 class="font-extrabold text-[#006747] text-lg md:text-2xl">
-          Emergency <br />
-          Service
+          Emergency <span class="block md:inline">Service</span>
         </h1>
       </div>
 
       <div
         class="flex flex-wrap justify-center md:justify-end items-center gap-4 md:gap-12 text-gray-700"
       >
-        <div
-          class="flex items-center gap-2 bg-[#ecfff0] px-4 md:px-6 py-2 md:py-3 rounded-full"
+        <button
+          class="flex items-center gap-2 bg-[#ecfff0] px-4 md:px-6 py-2 md:py-3 rounded-full hover:bg-[#d4ffe0]"
         >
-          <span id="heartCount" class="font-bold">0</span>
-          <img src="./assets/heart.png" class="w-5 h-5" alt="heart" />
-        </div>
+          <span id="heart-count" class="font-bold">0</span>
+          <img src="./assets/heart.png" class="w-5 h-5" alt="Heart icon" />
+        </button>
 
-        <div
-          class="flex items-center gap-2 bg-[#ecfff0] px-4 md:px-6 py-2 md:py-3 rounded-full"
+        <button
+          class="flex items-center gap-2 bg-[#ecfff0] px-4 md:px-6 py-2 md:py-3 rounded-full hover:bg-[#d4ffe0]"
         >
-          <span id="coinCount" class="font-bold">100</span>
-          <img src="./assets/coin.png" class="w-5 h-5" alt="coin" />
-        </div>
+          <span id="coin-count" class="font-bold">100</span>
+          <img src="./assets/coin.png" class="w-5 h-5" alt="Coin icon" />
+        </button>
 
-        <div
-          class="flex items-center gap-2 bg-[#00A63E] px-4 md:px-6 py-2 md:py-3 rounded-full"
+        <button
+          class="flex items-center gap-2 bg-[#00A63E] px-4 md:px-6 py-2 md:py-3 rounded-full hover:bg-[#009233]"
         >
-          <span id="copyCount" class="font-bold text-white">0</span>
+          <span id="copy-count" class="font-bold text-white">0</span>
           <span class="text-sm md:text-base font-bold text-white">Copy</span>
-        </div>
+        </button>
       </div>
     </nav>
+
     <!-- 2. Hero Section -->
+    <div class="p-8 bg-[radial-gradient(circle,_#006747,_#013223)]">
+      <img
+        class="w-32 mx-auto"
+        src="./assets/logo-dark.png"
+        alt="Emergency Service Logo"
+      />
+      <h1
+        class="text-white text-center my-4 md:my-6 text-3xl md:text-5xl font-extrabold tracking-wide"
+      >
+        Emergency Service Directory
+      </h1>
+      <h3 class="text-white text-center font-medium text-lg md:text-xl">
+        Government Emergency Services at Your Fingertip - A Project by
+        Government of the People's Republic of Bangladesh
+      </h3>
+    </div>
+
     <!-- 3. Main Section -->
     <!-- 3(a). Emergency Hotline Section  -->
     <!-- 3(b). History Section -->
