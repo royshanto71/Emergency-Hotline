@@ -89,7 +89,79 @@
     </div>
 
     <!-- 3. Main Section -->
-    <!-- 3(a). Emergency Hotline Section  -->
-    <!-- 3(b). History Section -->
+    <main
+      class="max-w-[1800px] mx-auto px-4 py-5 grid grid-rows-1 md:grid-cols-12 gap-4 md:gap-8 md:py-12 pb-20"
+    >
+      <!-- Left Side---Emergency Cards -->
+      <div id="card-container" class="col-span-9">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7"
+        >
+          <!-- Card 1 -->
+          <div class="bg-white shadow-xl p-8 rounded-2xl">
+            <div class="flex items-center justify-between">
+              <img
+                class="w-10 bg-red-100 rounded-xl p-2"
+                src="./assets/emergency.png"
+                alt="Emergency icon"
+              />
+              <i
+                class="heart-button cursor-pointer fa-regular fa-heart hover:text-red-500 transition-colors duration-500 text-xl text-gray-500"
+              ></i>
+            </div>
+            <div>
+              <h2 class="font-bold text-2xl pt-5">National Emergency Number</h2>
+              <p class="text-gray-600 pb-4">National Emergency</p>
+              <h1 class="text-4xl font-bold mb-4">999</h1>
+
+              <div
+                class="rounded-2xl text-lg text-gray-500 inline-block p-2 bg-gray-100 text-center mb-6"
+              >
+                <h1>All</h1>
+              </div>
+
+              <div class="flex gap-2">
+                <button
+                  class="copy-button btn w-1/2 text-gray-500 text-[16px] rounded-xl flex items-center justify-center gap-2"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="call-button btn w-1/2 bg-green-600 text-white font-normal text-[16px] rounded-xl flex items-center justify-center gap-2"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+          </div>
+
+          
+          <!-- End Card Template -->
+
+          
+        </div>
+      </div>
+
+      <!-- Right Side---Call History -->
+      <div
+        class="col-span-9 md:col-span-3 row-start-1 md:row-start-auto bg-white shadow-xl p-6 rounded-2xl w-full"
+      >
+        <div class="flex justify-between items-center mb-4">
+          <h1 class="font-semibold text-xl flex items-center gap-2">
+            <i class="fa-regular fa-clock"></i> Call history
+          </h1>
+          <button
+            id="history-clear"
+            class="p-3 cursor-pointer bg-green-600 text-white font-normal text-[16px] rounded-3xl"
+          >
+            Clear
+          </button>
+        </div>
+        <div id="history-container">
+          <!-- Call history items will be injected dynamically -->
+        </div>
+      </div>
+    </main>
+
   </body>
 </html>
