@@ -21,7 +21,7 @@ for (let button of copyButtons) {
     let card = button.closest(".bg-white.shadow-xl");
 
     let numberEl = card.querySelector(".phone-number");
-    let number = numberEl ? numberEl.textContent.trim() : "";
+    let number = numberEl.textContent;
 
     navigator.clipboard.writeText(number).then(function () {
       // success message
