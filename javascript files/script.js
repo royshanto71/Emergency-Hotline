@@ -40,7 +40,7 @@ cardContainer.addEventListener("click", function (event) {
 
   //Like Button
   if (target.classList.contains("heart-button")) {
-    hearts++;
+    hearts = hearts + 1;
     heartCount.textContent = hearts;
   }
 
